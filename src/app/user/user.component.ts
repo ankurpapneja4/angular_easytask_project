@@ -17,6 +17,8 @@ export class UserComponent {
   }
 
   onSelectUser() {
-    console.log("User Selected");
+    let i = Math.floor(UserList.length * Math.random());
+    this.username = UserList[i].name;
+    this.avatar = UserList[i].avatar;
   }
 }
