@@ -10,4 +10,8 @@ import { Component } from '@angular/core';
 export class UserComponent {
   username = "FooBar"
   avatarUrl = "assets/users/user-1.jpg"
+
+  onSelectUser() {
+    console.log("User Selected");
+  }
 }
